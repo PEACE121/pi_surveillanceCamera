@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cp wlanRestartScript.sh /home/pi
+(crontab -l ; echo "*/5 * * * * /home/pi/pitools/pitools/wlanRestart/wlanRestartScript.sh ") | sort - | uniq - | crontab -

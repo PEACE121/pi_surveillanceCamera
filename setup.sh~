@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd motion
+sudo setup.sh
+cd ..
+cd panTilt
+cp pi_pan_tilt_commandline.py /home/pi
+cd ..
+cd wlanRestart
+sudo setup.sh
+cd ..
