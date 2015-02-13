@@ -2,6 +2,7 @@
 
 # motion
 cd motion
+sudo chmod +x setup.sh
 sudo setup.sh
 cd ..
 
@@ -12,5 +13,6 @@ cd ..
 
 # wlan restart script
 cd wlanRestart
+sudo chmod +x setup.sh
 sudo setup.sh
 cd ..

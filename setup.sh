@@ -3,7 +3,7 @@
 # motion
 cd motion
 sudo chmod +x setup.sh
-sudo setup.sh
+sudo ./setup.sh
 cd ..
 
 # pan tilt configuration
@@ -14,5 +14,5 @@ cd ..
 # wlan restart script
 cd wlanRestart
 sudo chmod +x setup.sh
-sudo setup.sh
+sudo ./setup.sh
 cd ..
