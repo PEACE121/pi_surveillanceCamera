@@ -158,15 +158,17 @@ RPIO.PWM.setup( pulse_incr_us=PWM_PULSE_INCREMENT_US )
 RPIO.PWM.init_channel( PWM_DMA_CHANNEL, PWM_SUBCYLCLE_TIME_US )
     
 try:
-	panServoPWM.setAngle( sys.argv[1] )
-	tiltServoPWM.setAngle( sys.argv[2] )
+        print sys.argv[1]
+	panServoPWM.setCommand( int( sys.argv[1] ) )
+	tiltServoPWM.setCommand( sys.argv[2] )
+
+	time.sleep( 0.5 )
 
 except Exception as e:
     
     print "Got exception", e
     
 finally:
-    
     RPIO.PWM.clear_channel_gpio( PWM_DMA_CHANNEL, panServoPWM.pwmPin )
     RPIO.PWM.clear_channel_gpio( PWM_DMA_CHANNEL, tiltServoPWM.pwmPin )
     
