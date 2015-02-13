@@ -3,16 +3,19 @@
 # motion
 cd motion
 sudo chmod +x setup.sh
-sudo setup.sh
+sudo ./setup.sh
 cd ..
 
 # pan tilt configuration
 cd panTilt
+sudo ./setup.sh
+sudo apt-get install python-setuptools
+
 cp pi_pan_tilt_commandline.py /home/pi
 cd ..
 
 # wlan restart script
 cd wlanRestart
 sudo chmod +x setup.sh
-sudo setup.sh
+sudo ./setup.sh
 cd ..

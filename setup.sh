@@ -8,7 +8,7 @@ cd ..
 
 # pan tilt configuration
 cd panTilt
-cp pi_pan_tilt_commandline.py /home/pi
+sudo ./setup.sh
 cd ..
 
 # wlan restart script
