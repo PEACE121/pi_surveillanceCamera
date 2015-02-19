@@ -159,8 +159,8 @@ RPIO.PWM.init_channel( PWM_DMA_CHANNEL, PWM_SUBCYLCLE_TIME_US )
     
 try:
         print sys.argv[1]
-	panServoPWM.setCommand( int( sys.argv[1] ) )
-	tiltServoPWM.setCommand( sys.argv[2] )
+	panServoPWM.setAngle( int( sys.argv[1] ) )
+	tiltServoPWM.setAngle( int( sys.argv[2] ) )
 
 	time.sleep( 0.5 )
 
