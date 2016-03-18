@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import time
 import os
+import sys
 import RPIO
 import RPIO.PWM
 
@@ -157,8 +158,8 @@ RPIO.PWM.setup( pulse_incr_us=PWM_PULSE_INCREMENT_US )
 RPIO.PWM.init_channel( PWM_DMA_CHANNEL, PWM_SUBCYLCLE_TIME_US )
     
 try:
-	panServoPWM.setAngle( sys.argv[1] )
-	tiltServoPWM.setAngle( sys.argv[2] )
+	panServoPWM.setCommand( sys.argv[1] )
+	tiltServoPWM.setCommand( sys.argv[2] )
 
 except Exception as e:
     
