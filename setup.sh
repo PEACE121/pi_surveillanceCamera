@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get update
+
 # motion
 cd motion
 sudo chmod +x setup.sh
