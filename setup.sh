@@ -4,7 +4,7 @@
 cd motion
 sudo chmod +x setup.sh
 sudo ./setup.sh
-cd ..
+cd /home/pi/pi_surveillanceCamera 
 
 # pan tilt configuration
 cd panTilt
